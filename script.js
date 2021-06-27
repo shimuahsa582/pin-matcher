@@ -36,16 +36,10 @@ function verifyPin() {
 	const pin = document.getElementById('pin').value;
 	const typed = document.getElementById('typed_pin').value;
 	if (pin === typed) {
-		// const correctPin = document.getElementById('correct_pin');
-		// correctPin.style.display = 'block';
-		// const inCorrectPin = document.getElementById('incorrect_pin');
-		// inCorrectPin.style.display = 'none';
+
 		displayVerifyPin('block', 'none');
 	} else {
-		// const inCorrectPin = document.getElementById('incorrect_pin');
-		// inCorrectPin.style.display = 'block';
-		// const correctPin = document.getElementById('correct_pin');
-		// correctPin.style.display = 'none';
+		
 		displayVerifyPin('none', 'block');
 	}
 }
